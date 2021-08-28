@@ -1,0 +1,104 @@
+.done {
+  text-decoration: line-through;
+}
+
+.todo-list {
+  margin: 0;
+  padding-left: 1.2rem;
+}
+
+.todo-list li {
+  position: relative;
+  list-style-type: none;
+  padding-left: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.todo-list li:before {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  top: -2px;
+  width: 10px;
+  height: 10px;
+  border-width: 2px 2px 2px 2px;
+  border-radius: 100%;
+  border-style: solid;
+  border-color: #ffffff;
+  transform-origin: bottom left;
+  transform: rotate(45deg);
+}
+
+
+Boilerplate stuff
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-font-smoothing: antialiased;
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 65%;
+}
+
+body {
+  font-size: 1.6rem; /* 18px */
+  /* background-color: #efefef; */
+  color: #324047
+}
+
+html,
+body,
+section {
+  height: 100%;
+  overflow: hidden;
+}
+
+section {
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+div {
+  margin: auto;
+}
+
+input {
+  margin: 0 0 15px 0;
+  display: inline;
+}
+
+.sub-heading {
+  margin: 10px 0 0 0;
+  text-transform: uppercase;
+  font-style: italic;
+  font-size: small;
+}
+
+
+.top {
+  width: 100%;
+  display: flex;
+}
+
+.top input {
+  width: 80%;
+  padding: 10px 15px;
+  height: 100%;
+  font-size: medium;
+}
+
+.top button {
+  width: 15%;
+  padding: 10px 15px;
+  height: 100%;
+  font-size: medium;
+}
